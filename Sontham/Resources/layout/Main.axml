@@ -9,42 +9,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewUName"
-        android:layout_marginTop="50"
-        android:layout_marginLeft="20" />
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp" />
     <TextView
         android:text="Password"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewPassword"
-        android:layout_marginTop="100"
-        android:layout_marginLeft="20" />
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewUName"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="45dp"
+        android:height="30dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/editTextUNBox" />
     <EditText
         android:inputType="textWebEditText"
         android:layout_width="wrap_content"
-        android:layout_height="30"
+        android:layout_height="30dp"
         android:layout_toRightOf="@+id/textViewPassword"
         android:id="@+id/editTextPWBox"
-        android:text="password"
         android:background="@android:color/background_light"
-        android:layout_marginTop="100"
-        android:layout_marginLeft="50"
-        android:width="150" />
-    <EditText
-        android:layout_width="150"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/textViewUName"
-        android:layout_marginTop="50"
-        android:layout_marginLeft="45"
-        android:height="30"
-        android:background="@android:color/background_light"
-        android:id="@+id/editTextUNBox" />
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:width="150dp" />
     <Button
         android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewPassword"
         android:id="@+id/buttonLogin"
-        android:layout_marginTop="50"
-        android:layout_marginLeft="150" />
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp" />
+    <Button
+        android:text="SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignUp"
+        android:layout_toRightOf="@id/textViewUName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
 </RelativeLayout>

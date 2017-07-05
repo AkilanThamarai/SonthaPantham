@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewCName"
+        android:id="@+id/editTextCNameBox"
+        android:layout_marginTop="20dp"
+        android:height="30dp"
+        android:background="@android:color/background_light"
+        android:text="CNameBox" />
+    <TextView
+        android:text="MobileNo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMobileNo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAddress"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:text="Kootam'sName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKName"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" />
+</LinearLayout>
