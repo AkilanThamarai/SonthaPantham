@@ -60,23 +60,38 @@ namespace Sontham
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050009
-			public const int buttonLogin = 2131034121;
+			// aapt resource value: 0x7f05000d
+			public const int buttonLogin = 2131034125;
 			
-			// aapt resource value: 0x7f05000a
-			public const int buttonSignUp = 2131034122;
+			// aapt resource value: 0x7f050008
+			public const int buttonSC = 2131034120;
+			
+			// aapt resource value: 0x7f05000e
+			public const int buttonSignUp = 2131034126;
+			
+			// aapt resource value: 0x7f050006
+			public const int editTextCAddressBox = 2131034118;
+			
+			// aapt resource value: 0x7f050005
+			public const int editTextCMobileNoBox = 2131034117;
 			
 			// aapt resource value: 0x7f050001
 			public const int editTextCNameBox = 2131034113;
 			
-			// aapt resource value: 0x7f050008
-			public const int editTextPWBox = 2131034120;
-			
 			// aapt resource value: 0x7f050007
-			public const int editTextUNBox = 2131034119;
+			public const int editTextKNameBox = 2131034119;
+			
+			// aapt resource value: 0x7f05000b
+			public const int editTextLMNBox = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public const int editTextLPWBox = 2131034124;
 			
 			// aapt resource value: 0x7f050003
-			public const int textViewAddress = 2131034115;
+			public const int textViewCAddress = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int textViewCMobileNo = 2131034114;
 			
 			// aapt resource value: 0x7f050000
 			public const int textViewCName = 2131034112;
@@ -84,14 +99,11 @@ namespace Sontham
 			// aapt resource value: 0x7f050004
 			public const int textViewKName = 2131034116;
 			
-			// aapt resource value: 0x7f050002
-			public const int textViewMobileNo = 2131034114;
+			// aapt resource value: 0x7f050009
+			public const int textViewLMNo = 2131034121;
 			
-			// aapt resource value: 0x7f050006
-			public const int textViewPassword = 2131034118;
-			
-			// aapt resource value: 0x7f050005
-			public const int textViewUName = 2131034117;
+			// aapt resource value: 0x7f05000a
+			public const int textViewLPassword = 2131034122;
 			
 			static Id()
 			{

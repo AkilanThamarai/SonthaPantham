@@ -12,12 +12,16 @@ using Android.Widget;
 
 namespace Sontham
 {
-    [Activity(Label = "AddUrContact")]
+    [Activity(Label = "AddYourContact")]
     public class AddUrContact : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            //Set our view from the "AddUrContact" layout resource
+            SetContentView(Resource.Layout.AddUrContact);
+
 
             // Create your application here
         }

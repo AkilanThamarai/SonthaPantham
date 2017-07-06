@@ -12,10 +12,10 @@ namespace Sontham
     [Activity(Label = "SonthaPantham", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        //Button buttonLogin;
         Button buttonLogin;
-        EditText editTextPWBox;
-        EditText editTextUNBox;
+        
+        //EditText editTextLMNBox;
+        //EditText editTextLPWBox;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -26,25 +26,22 @@ namespace Sontham
 
             // Get our button from the layout resource,
             // and attach an event to it
+            //editTextLMNBox = FindViewById<EditText>(Resource.Id.editTextPWBox);
             buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
-            editTextUNBox = FindViewById<EditText>(Resource.Id.editTextUNBox);
-            editTextPWBox = FindViewById<EditText>(Resource.Id.editTextPWBox);
 
-            // buttonLogin.Click += ButtonLogin_Click;
+            //buttonLogin.Click += ButtonLogin_Click;
 
             buttonLogin.Click += delegate
             {
                 StartActivity(typeof(AddUrContact));
             };
 
+
+
         }
 
-        //private void ButtonLogin_Click(object sender, EventArgs e)
-        //{
 
-        //    Intent MyIntent = new Intent(AddUrContact.cs);
-        //    StartActivity(MyIntent);
-        //}
     }
+       
 }
 
