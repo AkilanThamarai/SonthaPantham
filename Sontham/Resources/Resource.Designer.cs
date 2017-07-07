@@ -66,6 +66,9 @@ namespace Sontham
 			// aapt resource value: 0x7f050008
 			public const int buttonSC = 2131034120;
 			
+			// aapt resource value: 0x7f050015
+			public const int buttonSGo = 2131034133;
+			
 			// aapt resource value: 0x7f05000e
 			public const int buttonSignUp = 2131034126;
 			
@@ -87,6 +90,15 @@ namespace Sontham
 			// aapt resource value: 0x7f05000c
 			public const int editTextLPWBox = 2131034124;
 			
+			// aapt resource value: 0x7f050013
+			public const int editTextSMNOBox = 2131034131;
+			
+			// aapt resource value: 0x7f050010
+			public const int editTextSNameBox = 2131034128;
+			
+			// aapt resource value: 0x7f050014
+			public const int editTextSPWBox = 2131034132;
+			
 			// aapt resource value: 0x7f050003
 			public const int textViewCAddress = 2131034115;
 			
@@ -104,6 +116,15 @@ namespace Sontham
 			
 			// aapt resource value: 0x7f05000a
 			public const int textViewLPassword = 2131034122;
+			
+			// aapt resource value: 0x7f050011
+			public const int textViewSMNo = 2131034129;
+			
+			// aapt resource value: 0x7f05000f
+			public const int textViewSName = 2131034127;
+			
+			// aapt resource value: 0x7f050012
+			public const int textViewSPassword = 2131034130;
 			
 			static Id()
 			{
@@ -123,6 +144,9 @@ namespace Sontham
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int SignUp = 2130903042;
 			
 			static Layout()
 			{

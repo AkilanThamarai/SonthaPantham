@@ -13,7 +13,8 @@ namespace Sontham
     public class MainActivity : Activity
     {
         Button buttonLogin;
-        
+        Button buttonSignUp;
+
         //EditText editTextLMNBox;
         //EditText editTextLPWBox;
 
@@ -28,15 +29,18 @@ namespace Sontham
             // and attach an event to it
             //editTextLMNBox = FindViewById<EditText>(Resource.Id.editTextPWBox);
             buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
-
+            buttonSignUp = FindViewById<Button>(Resource.Id.buttonSignUp);
             //buttonLogin.Click += ButtonLogin_Click;
+
+            buttonSignUp.Click += delegate
+            {
+                StartActivity(typeof(SignUp));
+            };
 
             buttonLogin.Click += delegate
             {
                 StartActivity(typeof(AddUrContact));
             };
-
-
 
         }
 
