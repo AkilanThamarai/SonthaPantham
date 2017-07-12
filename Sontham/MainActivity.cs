@@ -15,7 +15,7 @@ namespace Sontham
         Button buttonLogin;
         Button buttonSignUp;
 
-        //EditText editTextLMNBox;
+        EditText editTextLMNBox;
         //EditText editTextLPWBox;
 
         protected override void OnCreate(Bundle bundle)
@@ -30,7 +30,10 @@ namespace Sontham
             //editTextLMNBox = FindViewById<EditText>(Resource.Id.editTextPWBox);
             buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
             buttonSignUp = FindViewById<Button>(Resource.Id.buttonSignUp);
-            //buttonLogin.Click += ButtonLogin_Click;
+
+           // editTextLMNBox.SetHint(Resource.String.ApplicationName);
+         
+           
 
             buttonSignUp.Click += delegate
             {

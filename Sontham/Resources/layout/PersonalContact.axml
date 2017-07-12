@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="CPName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:id="@+id/textViewCPName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=0}"
+        android:layout_marginBottom="1.0dp" />
+    <Button
+        BorderRadius="15"
+        android:Name="imageCircleBack"
+        BackgroundColor="Maroon"
+        HeightRequest="10"
+        WidthRequest="10"
+        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=1.5, Constant = 2}"
+        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0, Property=Y, Constant=5}" />
+</RelativeLayout>

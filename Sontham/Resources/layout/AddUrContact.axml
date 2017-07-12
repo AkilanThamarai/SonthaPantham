@@ -1,86 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-  <TextView
-      android:text="Name"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewCName"
-      android:layout_marginTop="25dp"
-      android:layout_marginLeft="20dp" />
-  <EditText
-      android:layout_width="180dp"
-      android:layout_height="30dp"
-      android:layout_toRightOf="@+id/textViewCName"
-      android:id="@+id/editTextCNameBox"
-      android:layout_marginTop="20dp"
-      android:height="30dp"
-      android:background="@android:color/background_light"
-      android:text="CNameBox"
-      android:layout_marginLeft="100dp" />
-  <TextView
-      android:text="MobileNo"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewCMobileNo"
-      android:layout_marginTop="80dp"
-      android:layout_marginLeft="20dp" />
-  <TextView
-      android:text="Address"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewCAddress"
-      android:layout_marginTop="135dp"
-      android:layout_marginLeft="20dp" />
-  <TextView
-      android:text="Kootam Name"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewKName"
-      android:layout_marginTop="310dp"
-      android:layout_marginLeft="20dp" />
-  <EditText
-      android:inputType="number"
-      android:layout_width="180dp"
-      android:layout_toRightOf="@+id/textViewCMobileNo"
-      android:id="@+id/editTextCMobileNoBox"
-      android:layout_marginTop="75dp"
-      android:background="@android:color/background_light"
-      android:text="CMobileNoBox"
-      android:layout_marginLeft="65dp"
-      android:layout_height="30dp" />
-  <EditText
-      android:layout_width="180dp"
-      android:layout_height="140dp"
-      android:layout_toRightOf="@+id/textViewCAddress"
-      android:id="@+id/editTextCAddressBox"
-      android:layout_marginTop="130dp"
-      android:background="@android:color/background_light"
-      android:text="AddressBox"
-      android:layout_marginLeft="80dp" />
-  <EditText
-      android:layout_width="180dp"
-      android:layout_height="30dp"
-      android:layout_toRightOf="@id/textViewKName"
-      android:id="@+id/editTextKNameBox"
-      android:layout_marginTop="305dp"
-      android:background="@android:color/background_light"
-      android:text="KNameBox"
-      android:layout_marginLeft="20dp" />
-  <Button
-      android:text="Save &amp; Continue"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/textViewKName"
-      android:id="@+id/buttonSC"
-      android:layout_marginTop="50dp"
-      android:layout_centerInParent="true" />
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="பெயர்/Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCName"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCName"
+            android:id="@+id/editTextCNameBox"
+            android:layout_marginTop="20dp"
+            android:height="30dp"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="120"
+            android:layout_width="140dp" />
+        <TextView
+            android:text="அப்பா பெயர்/Father'sName"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCFName"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCFName"
+            android:id="@+id/editTextCFNameBox"
+            android:layout_marginTop="55dp"
+            android:height="30dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="26dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="அம்மா பெயர்/Mother'sName"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCMName"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCMName"
+            android:id="@+id/editTextCMNameBox"
+            android:layout_marginTop="90dp"
+            android:height="30dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="உடன்பிறப்பு1/Sibling1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCS1Name"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCS1Name"
+            android:id="@+id/editTextCS1NameBox"
+            android:layout_marginTop="125dp"
+            android:height="30dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="61dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="உடன்பிறப்பு2/Sibling2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCS2Name"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCS2Name"
+            android:id="@+id/editTextCS2NameBox"
+            android:layout_marginTop="160dp"
+            android:height="30dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="62dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="முகவரி1/Address1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCAddress1"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/textViewCAddress1"
+            android:id="@+id/editTextCAddressBox1"
+            android:layout_marginTop="195dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="85dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="முகவரி2/Address2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCAddress2"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCAddress2"
+            android:id="@+id/editTextCAddressBox2"
+            android:layout_marginTop="230dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="85dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="நகரம்/City"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCCity"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCCity"
+            android:id="@+id/editTextCCityBox"
+            android:layout_marginTop="265dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="137dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="அஞ்சல் குறியீடு/Postal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCPostal"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCPostal"
+            android:id="@+id/editTextCCityBox"
+            android:layout_marginTop="300dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="52dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="கூட்டம்/Kootam"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewKName"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewKName"
+            android:id="@+id/editTextKNameBox"
+            android:layout_marginTop="335dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="106dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="குல தெய்வம்/Family God"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCFGod"
+            android:layout_marginTop="375dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCFGod"
+            android:id="@+id/editTextCFGodBox"
+            android:layout_marginTop="370dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="42dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="வேலை/Job"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCjob"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCJob"
+            android:id="@+id/editTextCJobBox"
+            android:layout_marginTop="405dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="127dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="அலைபேசி எண்1/Mobile No1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCMN1"
+            android:layout_marginTop="445dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCMN1"
+            android:id="@+id/editTextCMN1Box"
+            android:layout_marginTop="440dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="அலைபேசி எண்2/Mobile No2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCMN2"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/textViewCMN2"
+            android:id="@+id/editTextCMN2Box"
+            android:layout_marginTop="475dp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="பிறந்த ஊர்/Birth Place"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCBPlace"
+            android:layout_marginTop="515dp"
+            android:layout_marginLeft="20dp" />
+        <Button
+            android:text="Save &amp; Continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewKName"
+            android:id="@+id/buttonSC"
+            android:layout_marginTop="190dp"
+            android:layout_centerInParent="true" />
+        <Spinner
+            android:entries="array/dropdown_arrays"
+            android:backgroundTint="#D11F08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_toRightOf="@id/textViewCBPlace" />
+    </RelativeLayout>
+</ScrollView>

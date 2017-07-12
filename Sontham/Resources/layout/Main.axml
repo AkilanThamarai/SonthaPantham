@@ -2,56 +2,66 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <TextView
-      android:text="MobileNo"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewLMNo"
-      android:layout_marginTop="155dp"
-      android:layout_marginLeft="20dp" />
-  <TextView
-      android:text="Password"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewLPassword"
-      android:layout_marginTop="203dp"
-      android:layout_marginLeft="20dp" />
-  <EditText
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"
-      android:layout_toRightOf="@+id/textViewLMNo"
-      android:layout_marginTop="150dp"
-      android:layout_marginLeft="52dp"
-      android:height="30dp"
-      android:background="@android:color/background_light"
-      android:id="@+id/editTextLMNBox" />
-  <EditText
-      android:inputType="textWebEditText"
-      android:layout_width="150dp"
-      android:layout_height="30dp"
-      android:layout_toRightOf="@+id/textViewLPassword"
-      android:id="@+id/editTextLPWBox"
-      android:background="@android:color/background_light"
-      android:layout_marginTop="200dp"
-      android:layout_marginLeft="50dp" />
-  <Button
-      android:text="Login"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/textViewLPassword"
-      android:id="@+id/buttonLogin"
-      android:layout_marginTop="50dp"
-      android:layout_marginLeft="150dp"
-      android:layout_centerInParent="true" />
-  <Button
-      android:text="SignUp"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/buttonSignUp"
-      android:layout_marginLeft="20dp"
-      android:layout_marginTop="40dp"
-      android:layout_centerHorizontal="true" />
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    android:fadingEdge="none"
+    android:animateLayoutChanges="true">
+    <TextView
+        android:text="அலைபேசி எண்/Mobile No"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:id="@+id/textViewLMNo"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="21.5dp" />
+    <TextView
+        android:text="கடவுச்சொல்/Password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLPassword"
+        android:layout_marginTop="203dp"
+        android:layout_marginLeft="20dp" />
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewLMNo"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="15dp"
+        android:height="30dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/editTextLMNBox"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:inputType="textWebEditText"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/textViewLPassword"
+        android:id="@+id/editTextLPWBox"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="200dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="42dp"
+        android:password="true" />
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLPassword"
+        android:id="@+id/buttonLogin"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTintMode="add"
+        android:bufferType="spannable" />
+    <Button
+        android:text="SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignUp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light" />
 </RelativeLayout>

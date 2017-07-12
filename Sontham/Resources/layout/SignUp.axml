@@ -18,8 +18,8 @@
         android:id="@+id/editTextSNameBox"
         android:layout_marginTop="95dp"
         android:background="@android:color/background_light"
-        android:text="SNameBox"
-        android:layout_marginLeft="88dp" />
+        android:layout_marginLeft="88dp"
+        android:textColor="@android:color/black" />
     <TextView
         android:text="MobileNo"
         android:inputType="number"
@@ -45,7 +45,8 @@
         android:layout_marginLeft="52dp"
         android:height="30dp"
         android:background="@android:color/background_light"
-        android:id="@+id/editTextSMNOBox" />
+        android:id="@+id/editTextSMNOBox"
+        android:textColor="@android:color/black" />
     <EditText
         android:inputType="textWebEditText"
         android:layout_width="180dp"
@@ -55,7 +56,8 @@
         android:background="@android:color/background_light"
         android:layout_marginTop="200dp"
         android:layout_marginLeft="50dp"
-        android:width="150dp" />
+        android:width="150dp"
+        android:textColor="@android:color/black" />
     <Button
         android:text="Go"
         android:layout_width="wrap_content"
