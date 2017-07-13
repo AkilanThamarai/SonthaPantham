@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewLPassword"
-        android:layout_marginTop="203dp"
+        android:layout_marginTop="205dp"
         android:layout_marginLeft="20dp" />
     <EditText
         android:layout_width="130dp"
@@ -47,21 +47,31 @@
         android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewLPassword"
         android:id="@+id/buttonLogin"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="150dp"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
         android:background="@android:color/holo_green_light"
         android:backgroundTintMode="add"
-        android:bufferType="spannable" />
+        android:layout_below="@+id/textViewForgot" />
     <Button
         android:text="SignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSignUp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_green_light" />
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_toRightOf="@+id/buttonLogin"
+        android:layout_below="@+id/textViewForgot" />
+    <TextView
+        android:text="Forgot Password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLPassword"
+        android:layout_marginLeft="120dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewForgot"
+        android:layout_marginTop="50dp"
+        style="@android:style/TextAppearance" />
 </RelativeLayout>

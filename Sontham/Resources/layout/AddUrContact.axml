@@ -5,7 +5,8 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light">
         <TextView
             android:text="பெயர்/Name"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -22,7 +23,7 @@
             android:height="30dp"
             android:background="@android:color/background_light"
             android:textColor="@android:color/black"
-            android:layout_marginLeft="120"
+            android:layout_marginLeft="120dp"
             android:layout_width="140dp" />
         <TextView
             android:text="அப்பா பெயர்/Father'sName"
@@ -209,7 +210,7 @@
         <EditText
             android:layout_width="140dp"
             android:layout_height="25dp"
-            android:layout_toRightOf="@id/textViewCJob"
+            android:layout_toRightOf="@+id/textViewCjob"
             android:id="@+id/editTextCJobBox"
             android:layout_marginTop="405dp"
             android:background="@android:color/background_light"
@@ -257,6 +258,15 @@
             android:id="@+id/textViewCBPlace"
             android:layout_marginTop="515dp"
             android:layout_marginLeft="20dp" />
+        <Spinner
+            android:entries="@array/dropdown_arrays"
+            android:backgroundTint="#ffb4b4b4"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner"
+            android:layout_toRightOf="@id/textViewCBPlace"
+            android:layout_marginTop="510dp"
+            android:layout_marginLeft="57dp" />
         <Button
             android:text="Save &amp; Continue"
             android:layout_width="wrap_content"
@@ -264,13 +274,8 @@
             android:layout_below="@id/textViewKName"
             android:id="@+id/buttonSC"
             android:layout_marginTop="190dp"
-            android:layout_centerInParent="true" />
-        <Spinner
-            android:entries="array/dropdown_arrays"
-            android:backgroundTint="#D11F08"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_toRightOf="@id/textViewCBPlace" />
+            android:layout_centerInParent="true"
+            android:background="@android:color/holo_green_light"
+            android:bufferType="spannable" />
     </RelativeLayout>
 </ScrollView>

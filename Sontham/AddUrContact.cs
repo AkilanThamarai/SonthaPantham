@@ -22,7 +22,7 @@ namespace Sontham
             //Set our view from the "AddUrContact" layout resource
             SetContentView(Resource.Layout.AddUrContact);
 
-          // var spinner = FindViewById<Spinner>(Resource.Id)
+            //var spinner = FindViewById<Spinner>(Resource.Id.spinner);
 
 
             // Create your application here

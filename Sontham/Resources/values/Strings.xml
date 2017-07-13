@@ -4,14 +4,14 @@
   <string name="ApplicationName">SonthaPantham</string>
 
   <string-array name="dropdown_arrays">
-
-    <item>Choose ur Place</item>
-    <item>பெருமாள் தேவன் பட்டி</item>
-    <item>சொக்கலிங்கபுரம்</item>
-    <item>மீனாட்சிபுரம்</item>
-    <item>கலங்காபேரி</item>
-    <item>துலுக்கன்குளம்</item>
     
-  </string-array> 
-
+      <item>Choose ur Place</item>
+      <item>பெருமாள் தேவன் பட்டி</item>
+      <item>சொக்கலிங்கபுரம்</item>
+      <item>மீனாட்சிபுரம்</item>
+      <item>கலங்காபேரி</item>
+      <item>துலுக்கன்குளம்</item>
+    
+      </string-array>
+  
 </resources>
