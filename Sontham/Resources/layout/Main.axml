@@ -64,14 +64,13 @@
         android:layout_toRightOf="@+id/buttonLogin"
         android:layout_below="@+id/textViewForgot" />
     <TextView
-        android:text="Forgot Password"
+        android:text="@string/register"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewLPassword"
-        android:layout_marginLeft="120dp"
         android:textColor="@android:color/black"
         android:id="@+id/textViewForgot"
         android:layout_marginTop="50dp"
-        style="@android:style/TextAppearance" />
+        android:layout_centerInParent="true" />
 </RelativeLayout>

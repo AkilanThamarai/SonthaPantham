@@ -13,5 +13,10 @@
       <item>துலுக்கன்குளம்</item>
     
       </string-array>
+
+  <string name="register">
+    <u>Forgot Password/கடவுச்சொல்லை மறந்துவிட்டேன்</u>
+  </string>
+ 
   
 </resources>
