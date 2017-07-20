@@ -16,8 +16,13 @@ namespace Sontham
         Button buttonSignUp;
 
         TextView textViewForgot;
-      
+
         //EditText editTextLPWBox;
+
+
+
+
+
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -26,16 +31,19 @@ namespace Sontham
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+
+
+
             // Get our button from the layout resource,
             // and attach an event to it
-            //editTextLMNBox = FindViewById<EditText>(Resource.Id.editTextPWBox);
+
             buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
             buttonSignUp = FindViewById<Button>(Resource.Id.buttonSignUp);
             textViewForgot = FindViewById<TextView>(Resource.Id.textViewForgot);
 
-           // editTextLMNBox.SetHint(Resource.String.ApplicationName);
-         
-           
+
+
+
 
             buttonSignUp.Click += delegate
             {
@@ -52,11 +60,48 @@ namespace Sontham
                 StartActivity(typeof(SignUp));
             };
 
+            ContactList contactList = new ContactList();
+
+            //contactList.AddNewContact(new PersonalContact
+            //{
+            //    ContactName = "Akilan",
+            //    FatherName = "thamarai",
+            //    City = "Srivi",
+
+            //    BirthPlace = "PerumalDevan",
+            //    Kootam = "Mookkaiyan"
+            //});
+
+            //contactList.AddNewContact(new PersonalContact
+            //{
+            //    ContactName = "Kar",
+            //    FatherName = "c",
+            //    City = "thoo",
+
+            //    BirthPlace = "thoo",
+            //    Kootam = "Mookkaiyan"
+            //});
+
+
+
+        
+
+           
+
+            // cp.GetBirthPlace(city);
+           
+
+         
+
+
+
+
+
 
         }
 
 
     }
-       
+
 }
 

@@ -18,19 +18,17 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/searchViewContacts"
-            android:id="@+id/textViewN1"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="20dp"
-            android:text="1" />
+            android:layout_below="@+id/searchViewContacts"
+            android:id="@+id/textViewContacts1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp" />
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewN1"
-            android:id="@+id/textViewN2"
+            android:layout_below="@+id/textViewContacts1"
+            android:id="@+id/textViewContacts2"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:text="2" />
+            android:layout_marginLeft="20dp" />
     </RelativeLayout>
 </ScrollView>
