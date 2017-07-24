@@ -16,8 +16,8 @@ namespace Sontham
     [Activity(Label = "Contacts")]
     public class Contacts : Activity
     {
-        TextView textViewContacts1;
-        TextView textViewContacts2;
+        //TextView textViewContacts1;
+        //TextView textViewContacts2;
 
 
 
@@ -31,15 +31,18 @@ namespace Sontham
 
             SetContentView(Resource.Layout.Contacts);
 
-            textViewContacts1 = FindViewById<TextView>(Resource.Id.textViewContacts1);
-            textViewContacts2 = FindViewById<TextView>(Resource.Id.textViewContacts2);
+            //textViewContacts1 = FindViewById<TextView>(Resource.Id.textViewContacts1);
+            //textViewContacts2 = FindViewById<TextView>(Resource.Id.textViewContacts2);
 
-        
+
+
+
+
 
 
             ////foreach (string name in names)
             ////{
-            ////    textViewContacts1.Text = name.ToString();
+            ////    textViewContacts1.Text = name.ToString();   
             ////    textViewContacts2.Text = name.ToString();
 
             ////}
@@ -48,13 +51,33 @@ namespace Sontham
 
             string[] names = c3.Split(',');
 
-            for (int i = 0; i < names.Length; i++)
+            
+            LinearLayout linearLayout = (LinearLayout)FindViewById(Resource.Id.linearlayout);
+
+            for (int i = 0; i <= names.Length-1; i++)
             {
-                textViewContacts1.Text = names[0];
-                textViewContacts2.Text = names[1];
+               //string a = i.ToString();
+
+                EditText edittext = new EditText(this);
+                
+                edittext.SetText(names[i].ToString(), null);
+               
+                linearLayout.AddView(edittext);
             }
 
-          
+
+
+            //for (int i = 0; i < names.Length; i++)
+            //{
+            //    textViewContacts1.Text = names[0];
+            //    textViewContacts2.Text = names[1];
+            //}
+
+           
+
+            //textViewContacts1.Text = names[0].ToString();
+            //textViewContacts2.Text = names[1].ToString();
+
 
 
         }

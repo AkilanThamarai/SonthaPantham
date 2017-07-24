@@ -59,7 +59,7 @@ namespace Sontham
             editTextCMN1Box = FindViewById<EditText>(Resource.Id.editTextCMN1Box);
             editTextCMN2Box = FindViewById<EditText>(Resource.Id.editTextCMN2Box);
 
-            PersonalContact personalContact = new PersonalContact();
+            PersonalContact personalContact =   new PersonalContact();
 
 
             personalContact.ContactName = editTextCNameBox.Text;
@@ -111,25 +111,22 @@ namespace Sontham
 
             buttonSC = FindViewById<Button>(Resource.Id.buttonSC);
 
-            string c1 = newStoredContacts[0].ContactName.ToString();
-            string c2 = newStoredContacts[1].ContactName.ToString();
-            string c3 = c1 + "," + c2;
 
             buttonSC.Click += delegate
             {
 
 
 
-
-                for (int i = 0; i < newStoredContacts.Count-1 ; i++)
-                {
-                    Intent intent = new Intent(this, typeof(Contacts));
-                    
-
-                    //  intent.PutExtra("ContactNames", newStoredContacts[i].ContactName.ToString());
-                    intent.PutExtra("ContactNames", c3);
-                    this.StartActivity(intent);
+                string name="";
+                for (int i = 0; i <= newStoredContacts.Count-1; i++)
+                {                    
+                    name = name + "," + newStoredContacts[i].ContactName.ToString();
                 }
+                name = name.Substring(1);
+                Intent intent = new Intent(this, typeof(Contacts));
+                intent.PutExtra("ContactNames", name);
+                // intent.PutExtra("ContactNames", c3);
+                this.StartActivity(intent);
 
 
                 //Intent intent = new Intent(this, typeof(Contacts));

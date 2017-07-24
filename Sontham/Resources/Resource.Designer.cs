@@ -76,17 +76,17 @@ namespace Sontham
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060026
-			public const int buttonLogin = 2131099686;
+			// aapt resource value: 0x7f060024
+			public const int buttonLogin = 2131099684;
 			
 			// aapt resource value: 0x7f06001e
 			public const int buttonSC = 2131099678;
 			
-			// aapt resource value: 0x7f060031
-			public const int buttonSGo = 2131099697;
+			// aapt resource value: 0x7f06002f
+			public const int buttonSGo = 2131099695;
 			
-			// aapt resource value: 0x7f060028
-			public const int buttonSignUp = 2131099688;
+			// aapt resource value: 0x7f060026
+			public const int buttonSignUp = 2131099686;
 			
 			// aapt resource value: 0x7f06000b
 			public const int editTextCAddressBox1 = 2131099659;
@@ -130,26 +130,26 @@ namespace Sontham
 			// aapt resource value: 0x7f060013
 			public const int editTextKNameBox = 2131099667;
 			
-			// aapt resource value: 0x7f060024
-			public const int editTextLMNBox = 2131099684;
+			// aapt resource value: 0x7f060022
+			public const int editTextLMNBox = 2131099682;
 			
-			// aapt resource value: 0x7f060025
-			public const int editTextLPWBox = 2131099685;
+			// aapt resource value: 0x7f060023
+			public const int editTextLPWBox = 2131099683;
 			
-			// aapt resource value: 0x7f06002d
-			public const int editTextSMNOBox = 2131099693;
+			// aapt resource value: 0x7f06002b
+			public const int editTextSMNOBox = 2131099691;
 			
-			// aapt resource value: 0x7f06002a
-			public const int editTextSNameBox = 2131099690;
+			// aapt resource value: 0x7f060028
+			public const int editTextSNameBox = 2131099688;
+			
+			// aapt resource value: 0x7f06002c
+			public const int editTextSPWBox = 2131099692;
 			
 			// aapt resource value: 0x7f06002e
-			public const int editTextSPWBox = 2131099694;
-			
-			// aapt resource value: 0x7f060030
-			public const int editTextSRePWBox = 2131099696;
+			public const int editTextSRePWBox = 2131099694;
 			
 			// aapt resource value: 0x7f06001f
-			public const int searchViewContacts = 2131099679;
+			public const int linearlayout = 2131099679;
 			
 			// aapt resource value: 0x7f06001d
 			public const int spinner = 2131099677;
@@ -196,35 +196,29 @@ namespace Sontham
 			// aapt resource value: 0x7f060016
 			public const int textViewCjob = 2131099670;
 			
-			// aapt resource value: 0x7f060020
-			public const int textViewContacts1 = 2131099680;
-			
-			// aapt resource value: 0x7f060021
-			public const int textViewContacts2 = 2131099681;
-			
-			// aapt resource value: 0x7f060027
-			public const int textViewForgot = 2131099687;
+			// aapt resource value: 0x7f060025
+			public const int textViewForgot = 2131099685;
 			
 			// aapt resource value: 0x7f060012
 			public const int textViewKName = 2131099666;
 			
-			// aapt resource value: 0x7f060022
-			public const int textViewLMNo = 2131099682;
+			// aapt resource value: 0x7f060020
+			public const int textViewLMNo = 2131099680;
 			
-			// aapt resource value: 0x7f060023
-			public const int textViewLPassword = 2131099683;
-			
-			// aapt resource value: 0x7f06002b
-			public const int textViewSMNo = 2131099691;
+			// aapt resource value: 0x7f060021
+			public const int textViewLPassword = 2131099681;
 			
 			// aapt resource value: 0x7f060029
-			public const int textViewSName = 2131099689;
+			public const int textViewSMNo = 2131099689;
 			
-			// aapt resource value: 0x7f06002c
-			public const int textViewSPassword = 2131099692;
+			// aapt resource value: 0x7f060027
+			public const int textViewSName = 2131099687;
 			
-			// aapt resource value: 0x7f06002f
-			public const int textViewSRePassword = 2131099695;
+			// aapt resource value: 0x7f06002a
+			public const int textViewSPassword = 2131099690;
+			
+			// aapt resource value: 0x7f06002d
+			public const int textViewSRePassword = 2131099693;
 			
 			static Id()
 			{
