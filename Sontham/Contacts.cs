@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
+using SQLite;
 
 namespace Sontham
 {
@@ -35,10 +35,8 @@ namespace Sontham
             //textViewContacts2 = FindViewById<TextView>(Resource.Id.textViewContacts2);
 
 
-
-
-
-
+            DBRepository dbr = new DBRepository();
+            TableQuery<ToDoTask> result1 = dbr.GetAllContactsName();
 
             ////foreach (string name in names)
             ////{
@@ -47,24 +45,48 @@ namespace Sontham
 
             ////}
 
-            string c3 = Intent.GetStringExtra("ContactNames");
+           // string result1 = Intent.GetStringExtra("ContactNames");
 
-            string[] names = c3.Split(',');
+            //string[] names = result1.Split(',');
 
             
             LinearLayout linearLayout = (LinearLayout)FindViewById(Resource.Id.linearlayout);
 
-            for (int i = 0; i <= names.Length-1; i++)
+            foreach(var res in result1)
+
+           // for (int i = 0; i <= result1; i++)
             {
                //string a = i.ToString();
 
-                EditText edittext = new EditText(this);
+                TextView textview = new TextView(this);
+
+                //  textview.SetText(names[i].ToString(), null);
+                textview.Id = res.Id;
+                //textview.SetText (res.Id);
+                textview.SetText(res.TContactName, null);
                 
-                edittext.SetText(names[i].ToString(), null);
                
-                linearLayout.AddView(edittext);
+                linearLayout.AddView(textview);
+
+
+                
+
+                
+                textview.Click += Textview_Click;
+                
             }
 
+            //List<TextView> textview = new List<TextView>();
+
+            //textview.SetText(names[i].ToString(), null);
+
+            //linearLayout.AddView(textview);
+
+            //string res = dbr.GetTaskById();
+
+            //for (int n = 0; n < textview.)
+
+            //    textview.Click += Textview_Click;
 
 
             //for (int i = 0; i < names.Length; i++)
@@ -73,7 +95,6 @@ namespace Sontham
             //    textViewContacts2.Text = names[1];
             //}
 
-           
 
             //textViewContacts1.Text = names[0].ToString();
             //textViewContacts2.Text = names[1].ToString();
@@ -82,6 +103,22 @@ namespace Sontham
 
         }
 
+        private void Textview_Click(object sender, EventArgs e)
+        {
 
+            string s1 = sender.Text;
+
+            DBRepository dbr = new DBRepository();
+            string res = dbr.GetTaskById();
+
+
+
+            Intent intent = new Intent(this, typeof(PersonalContact));
+            intent.PutExtra("id", res);
+            // intent.PutExtra("ContactNames", c3);
+            this.StartActivity(intent);
+
+
+        }
     }
 }

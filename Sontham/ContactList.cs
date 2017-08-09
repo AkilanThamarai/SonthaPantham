@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
+using SQLite;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace Sontham
 {
@@ -38,12 +32,16 @@ namespace Sontham
         public List<PersonalContact> GetAllContacts1()
         {
            
+            //string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo");
+            //var db = new SQLiteConnection(dbPath);
+            //ToDoTask item = new ToDoTask();
+            //item.SaveContact = store;
+            //db.Insert(item);
+          
+            
             return AllContacts;
 
         }
-
-      
-
 
 
     }

@@ -5,7 +5,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using System.Collections.Generic;
+using System.IO;
+using SQLite;
+using Java.Util;
 
 namespace Sontham
 {
@@ -20,10 +23,6 @@ namespace Sontham
         //EditText editTextLPWBox;
 
 
-
-
-
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -32,18 +31,17 @@ namespace Sontham
             SetContentView(Resource.Layout.Main);
 
 
-
-
             // Get our button from the layout resource,
             // and attach an event to it
+
+
+            DBRepository dbr = new DBRepository();
+            var result = dbr.CreateTable();
+            var database = dbr.CreateDB();
 
             buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
             buttonSignUp = FindViewById<Button>(Resource.Id.buttonSignUp);
             textViewForgot = FindViewById<TextView>(Resource.Id.textViewForgot);
-
-
-
-
 
             buttonSignUp.Click += delegate
             {
@@ -53,6 +51,10 @@ namespace Sontham
             buttonLogin.Click += delegate
             {
                 StartActivity(typeof(AddUrContact));
+
+         
+
+
             };
 
             textViewForgot.Click += delegate
@@ -84,23 +86,16 @@ namespace Sontham
 
 
 
-        
-
-           
-
-            // cp.GetBirthPlace(city);
-           
-
-         
-
-
-
-
-
+            //Insert Record
+            //Button buttonSC = FindViewById<Button>(Resource.Id.buttonSC);
+            //buttonSC.Click += ButtonSC_Click;
 
         }
 
-
+        //private void ButtonSC_Click(object sender, EventArgs e)
+        //{
+        //    StartActivity(typeof(AddUrContact));
+        //}
     }
 
 }

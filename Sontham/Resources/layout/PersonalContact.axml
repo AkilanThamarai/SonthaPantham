@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <RelativeLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editTextPCName" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPCName"
+        android:id="@+id/editTextPCFName" />
+    <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editTextPCName"
+           android:id="@+id/editTextPCMName" />
+    <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editTextPCMName"
+           android:id="@+id/editTextPCFSib1" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPCFSib1"
+            android:id="@+id/editTextPCFSib2" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPCFSib2"
+            android:id="@+id/editTextPCAddr1" />
+
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCAddr1"
+                android:id="@+id/editTextPCAddr2" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCAddr1"
+                android:id="@+id/editTextPCCity" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCCity"
+                android:id="@+id/editTextPCPostal" />
+
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCPostal"
+                android:id="@+id/editTextPCKootam" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCKootam"
+                android:id="@+id/editTextPCFGod" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCFGod"
+                android:id="@+id/editTextPCJob" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCJob"
+                android:id="@+id/editTextPCMN1" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCMN1"
+                android:id="@+id/editTextPCMN2" />
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPCMN2"
+                android:id="@+id/editTextPCBirthPlace" />
+
+
+  </RelativeLayout>
+</ScrollView>
